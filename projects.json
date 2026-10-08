@@ -1,0 +1,50 @@
+{
+    "project_game_engine_title": {
+        "description": "project_game_engine_description",
+        "skills":[
+            "C++",
+            "OpenGL",
+            "Lua"
+        ],
+        "link": "https://git.tarion.org/tarion/Game-Engine",
+        "linkIcon": "fa-brands fa-git-alt"
+    },
+    "project_tarion_org_title": {
+        "description": "project_tarion_org_description",
+        "skills":[
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Hosting"
+        ],
+        "link": "https://tarion.org/",
+        "linkIcon": "fa-solid fa-globe"
+    },
+    "project_media-server_title": {
+        "description": "project_media-server_description",
+        "skills":[
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Hosting"
+        ],
+        "link": "https://git.tarion.org/tarion/media-server",
+        "linkIcon": "fa-brands fa-git-alt"
+    },
+    "project_remove_shorts_title": {
+        "description": "project_remove_shorts_description",
+        "skills":[
+            "JavaScript"
+        ],
+        "link": "https://git.tarion.org/tarion/remove-youtube-shorts",
+        "linkIcon": "fa-brands fa-git-alt"
+    },
+    "project_lov8_title": {
+        "description": "project_lov8_description",
+        "skills":[
+            "Lua"
+        ],
+        "link": "https://git.tarion.org/tarion/LOV-8",
+        "linkIcon": "fa-brands fa-git-alt"
+    }
+}

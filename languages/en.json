@@ -1,0 +1,37 @@
+{
+    "site_title": "Tarions Portfolio",
+
+    "nav_home": "Home",
+    "nav_projects": "Projects",
+    "nav_skills": "Skills",
+    "nav_contact": "Contact",
+
+    "home_greeting": "Hey <span class='wave'>👋</span> I'm <span>Tarion</span>.",
+    "home_subtitle": "Game Programmer",
+    "home_description": "Currently studying Computer Science.",
+
+    "projects_title": "Projects",
+
+    "skills_title": "Skills",
+
+    "contact_title": "Contact",
+    "contact_message": "Interested in working together? Send me an email <i class='fa-solid fa-envelope'></i>",
+
+    "footer_text": "Tarion. All rights reserved.",
+
+
+    "project_game_engine_title": "Game Engine",
+    "project_game_engine_description": "A custom C++ game engine with Lua scripting integration.",
+    
+    "project_tarion_org_title": "tarion.org",
+    "project_tarion_org_description": "Personal portfolio showcasing my projects and development work.",
+
+    "project_media-server_title": "Media Server",
+    "project_media-server_description": "A custom media server that allows me to upload files and share them using a unique link.",
+
+    "project_lov8_title": "LOV-8",
+    "project_lov8_description": "A fantasy console built with LÖVE2D, featuring a sandboxed environment for developing games within strict limitations.",
+
+    "project_remove_shorts_title": "Remove Youtube Shorts",
+    "project_remove_shorts_description": "Simple Firefox & Chrome extension that removes all traces of Youtube Shorts."
+}

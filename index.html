@@ -1,0 +1,111 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tarion</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="index.css">
+		
+
+      <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96" />
+      <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
+      <link rel="shortcut icon" href="/favicons/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+      <meta name="apple-mobile-web-app-title" content="Tarion" />
+      <link rel="manifest" href="/favicons/site.webmanifest" />
+  </head>
+  <body class="colours">
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#"><img src="img/profile.jpg" alt="Logo"></a>
+        </div>
+
+        <ul>
+          <li>
+            <a data-i18n="nav_projects" href="#projects"></a>
+          </li>
+          <li>
+            <a data-i18n="nav_skills" href="#skills"></a>
+          </li>
+          <li>
+            <a data-i18n="nav_contact" href="#contact"></a>
+          </li>
+        </ul>
+
+        <!-- Mobile Nav -->
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle"><i class="fa-solid fa-bars"></i></button>
+      </nav>
+    </header>
+    <nav id="mobile-nav" class="mobile-nav">
+      <ul>
+        <li>
+          <a data-i18n="nav_projects" href="#projects"></a>
+        </li>
+        <li>
+          <a data-i18n="nav_skills" href="#skills"></a>
+        </li>
+        <li>
+          <a data-i18n="nav_contact" href="#contact"></a>
+        </li>
+        <div class="links">
+          <a href="https://git.tarion.org/"><i class="fa-brands fa-git-alt"></i></a>
+          <a href="https://github.com/tarionx"><i class="fa-brands fa-github"></i></a>
+          <button id="dark-mode-toggle-mobile" class="dark-mode-toggle-mobile"><i class="fa-solid fa-sun"></i></button>
+        </div>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="home">
+        <div class="home-container">
+          <h1 data-i18n="home_greeting"></h1>
+          <h2 data-i18n="home_subtitle"></h2>
+          <p data-i18n="home_description"></p>
+          <div class="links">
+            <a href="https://git.tarion.org/"><i class="fa-brands fa-git-alt"></i></a>
+            <a href="https://github.com/tarionx"><i class="fa-brands fa-github"></i></a>
+          </div>
+      </section>
+      <section class="projects-section" id="projects">
+        <div class="projects-container">
+          <h1 data-i18n="projects_title"></h1>
+          <div class="projects">
+            <!-- Generated projects go here -->
+          </div>
+        </div>
+      </section>
+      <section class="skills-section" id="skills">
+        <div class="skills-container">
+          <h1 data-i18n="skills_title"></h1>
+          <ul id="skills-list">
+            <!-- Generated skills go here -->
+          </ul>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="contact-container">
+          <h1 data-i18n="contact_title"></h1>
+          <a data-i18n="contact_message" href="mailto:mail@tarion.org"></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="links">
+        <a href="mailto:mail@tarion.org"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/tarionx"><i class="fa-brands fa-github"></i></a>
+        <a href="https://git.tarion.org/"><i class="fa-brands fa-git-alt"></i></a>
+      </div>
+
+      <p>&copy; 2025<script>new Date().getFullYear() > 2025 && document.write("-" + new Date().getFullYear());</script>,</p>,<p data-i18n="footer_text"></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
