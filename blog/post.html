@@ -62,7 +62,8 @@
 
     <main>
 		<h1>{{ $title }}</h1>
-        <article>{{ markdown $markdownFile.Body }}</article>
+        {{ $html := markdown $markdownFile.Body }}
+		<article>{{ regexReplaceAll `(<img[^>]*\ssrc=")([^/:"][^:"]*)"` $html `${1}/blog/posts/${2}"` }}</article>
     </main>
     <script src="../language.js"></script>
     <script>language.Load(1);</script>

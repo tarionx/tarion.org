@@ -15,7 +15,8 @@ With this setup we can capture the data signal (Pin 6) while the Beocenter 9500 
 Some issues to note before we continue:
 - Powerlink is shielded and will absolutely unusable if our passthrough isn't properly shielded.
 - We will also need to ground our data signal using Pin 7.
-## Overview:
+
+## Overview
 
 Powerlink MK2 has 8 lines which are labelled in as such:
 ![[chrome_T2AxCGWHXU.png]]
