@@ -5,7 +5,7 @@ language = {
             lang = "en";
         }
 
-        const url = '${basePath}languages/${lang}.json';
+        const url = `${basePath}languages/${lang}.json`;
         const response = await fetch(url);
     
         return response.json();
