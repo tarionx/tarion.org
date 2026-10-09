@@ -6,8 +6,8 @@ language = {
         }
 
         const response = await fetch(returns + "/languages/${lang}.json");
-        print(returns);
-        print(returns + "/languages/${lang}.json");
+        console.log(returns);
+        console.log(returns + "/languages/${lang}.json");
         return response.json();
     },
     Load : async function(returns = 0){
