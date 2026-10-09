@@ -19,7 +19,9 @@ Some issues to note before we continue:
 ## Overview
 
 Powerlink MK2 has 8 lines which are labelled in as such:
+
 ![powerlink-pinout](beolab-displays/powerlink-pinout.png)
 
 **Our diagram:**
+
 ![diagram](beolab-displays/diagram.png)
