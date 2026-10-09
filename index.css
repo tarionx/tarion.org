@@ -65,6 +65,7 @@ nav {
     padding: 20px 0px;
 
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 nav ul {
@@ -139,6 +140,7 @@ footer p {
 */
 main {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto 0 auto;
     padding-top: 132px;
     padding-left: 32px;
@@ -365,7 +367,6 @@ footer a {
 
 @media (max-width: 768px) {
     main {
-        max-width: 1200px;
         margin: 0 auto 0 auto;
         padding-left: 32px;
         padding-right: 32px;
