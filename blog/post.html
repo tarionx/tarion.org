@@ -3,9 +3,7 @@
 {{ $orgPath := .OriginalReq.URL.Path | trimPrefix "/blog/" | trimSuffix "/" }}
 {{ $path := printf "/blog/posts/%s.md" $orgPath }}
 
-{{ if not (fileExists $path) }}
-    {{ errorf "Blog post not found: %s" $orgPath }}
-{{ end }}
+{{ if not (fileExists $path) }}{{ httpError 404 }}{{ end }}
 
 {{ $markdownFile := (include $path | splitFrontMatter) }}
 
