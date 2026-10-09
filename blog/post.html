@@ -33,9 +33,44 @@
 </head>
 
 <body class="colours">
+	<header>
+		<nav>
+			<div class="logo">
+				<a href="#"><img src="img/profile.jpg" alt="Logo"></a>
+			</div>
+
+			<ul>
+				<li>
+					<a href="#home">Home</a>
+				</li>
+			</ul>
+
+			<!-- Mobile Nav -->
+			<button id="mobile-nav-toggle" class="mobile-nav-toggle"><i class="fa-solid fa-bars"></i></button>
+		</nav>
+	</header>
+	<nav id="mobile-nav" class="mobile-nav">
+		<ul>
+			<li>
+			<a href="#home">Home</a>
+			</li>
+			<div class="links">
+				<a href="https://github.com/tarionx"><i class="fa-brands fa-github"></i></a>
+			</div>
+		</ul>
+	</nav>
+
     <main>
         <article>{{ markdown $markdownFile.Body }}</article>
     </main>
-</body>
 
+    <footer>
+      <div class="links">
+        <a href="mailto:mail@tarion.org"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/tarionx"><i class="fa-brands fa-github"></i></a>
+      </div>
+
+      <p>&copy; 2025<script>new Date().getFullYear() > 2025 && document.write("-" + new Date().getFullYear());</script>,</p> <p data-i18n="footer_text"></p>
+    </footer>
+</body>
 </html>
