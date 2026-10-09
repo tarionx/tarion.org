@@ -7,14 +7,17 @@ language = {
 
         const response = await fetch(returns + "/languages/${lang}.json");
         console.log(returns);
-        console.log(returns + "/languages/${lang}.json");
+        console.log(returns + '/languages/${lang}.json');
         return response.json();
     },
-    Load : async function(returns = 0){
+    Load : async function(returns){
         const userLang = (navigator.language || navigator.userLanguage).split("-")[0];
 
+        if (returns === undefined){
+            returns = 0;
+        }
         returnsPath = "";
-        for (var i = 0; i < returns.length+1; i++){
+        for (var i = 0; i < returns.length; i++){
             returnsPath += "../";
         }
 
