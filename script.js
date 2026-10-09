@@ -55,9 +55,6 @@ async function getSkillsData(){
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const userLang = (navigator.language || navigator.userLanguage).split('-')[0];
-    const langData = await getLanguageData(userLang);
-
     // Load Projects from projects.json
     const projects = await getProjectsData();
     if (projects != null){
@@ -111,9 +108,4 @@ document.addEventListener("DOMContentLoaded", async () => {
             skillsList.appendChild(newSkill);
         }
     }
-
-    document.querySelectorAll("[data-i18n]").forEach((element) => {
-        const key = element.getAttribute("data-i18n");
-        element.innerHTML = langData[key];
-    });
 })
