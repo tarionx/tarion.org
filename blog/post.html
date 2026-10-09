@@ -62,9 +62,7 @@
 
     <main>
 		<h1>{{ $title }}</h1>
-		{{ $body := regexReplaceAll `!\[\[([^\]|]+)\|(\d+)\]\]` $markdownFile.Body `<img src="/blog/posts/${1}" width="${2}" alt="">` }}
-		{{ $body = regexReplaceAll `!\[\[([^\]|]+)\]\]` $body `<img src="/blog/posts/${1}" alt="">` }}
-		{{ $html := markdown $body }}
+        {{ $html := markdown $markdownFile.Body }}
 		<article>{{ regexReplaceAll `(<img[^>]*\ssrc=")([^/:"][^:"]*)"` $html `${1}/blog/posts/${2}"` }}</article>
     </main>
     <script src="../language.js"></script>
