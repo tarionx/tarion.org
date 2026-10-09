@@ -1,27 +1,20 @@
 
 language = {
-    getLanguageData : async function(lang, returns){
+    getLanguageData : async function(lang, basePath){
         if (!lang || lang === ""){
             lang = "en";
         }
 
-        const response = await fetch(returns + "/languages/${lang}.json");
-        console.log(returns);
-        console.log(returns + '/languages/${lang}.json');
+        const url = '${basePath}languages/${lang}.json';
+        const response = await fetch(url);
+    
         return response.json();
     },
-    Load : async function(returns){
+    Load : async function(returns = 0){
         const userLang = (navigator.language || navigator.userLanguage).split("-")[0];
 
-        if (returns === undefined){
-            returns = 0;
-        }
-        returnsPath = "";
-        for (var i = 0; i < returns.length; i++){
-            returnsPath += "../";
-        }
-
-        const langData = await language.getLanguageData(userLang, returnsPath);
+        const basePath = returns > 0 ? "../".repeat(returns) : "./";
+        const langData = await language.getLanguageData(userLang, basePath);
 
         document.querySelectorAll("[data-i18n]").forEach((element) => {
             const key = element.getAttribute("data-i18n");
