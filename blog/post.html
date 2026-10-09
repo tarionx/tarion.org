@@ -36,12 +36,12 @@
 	<header>
 		<nav>
 			<div class="logo">
-				<a href="#"><img src="img/profile.jpg" alt="Logo"></a>
+				<a href="#"><img src="../img/profile.jpg" alt="Logo"></a>
 			</div>
 
 			<ul>
 				<li>
-					<a href="#home">Home</a>
+					<a href="../">Home</a>
 				</li>
 			</ul>
 
@@ -52,7 +52,7 @@
 	<nav id="mobile-nav" class="mobile-nav">
 		<ul>
 			<li>
-			<a href="#home">Home</a>
+				<a href="../">Home</a>
 			</li>
 			<div class="links">
 				<a href="https://github.com/tarionx"><i class="fa-brands fa-github"></i></a>
@@ -63,14 +63,13 @@
     <main>
         <article>{{ markdown $markdownFile.Body }}</article>
     </main>
-
-    <footer>
-      <div class="links">
-        <a href="mailto:mail@tarion.org"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://github.com/tarionx"><i class="fa-brands fa-github"></i></a>
-      </div>
-
-      <p>&copy; 2025<script>new Date().getFullYear() > 2025 && document.write("-" + new Date().getFullYear());</script>,</p> <p data-i18n="footer_text"></p>
-    </footer>
 </body>
+	<footer>
+		<div class="links">
+		<a href="mailto:mail@tarion.org"><i class="fa-solid fa-envelope"></i></a>
+		<a href="https://github.com/tarionx"><i class="fa-brands fa-github"></i></a>
+		</div>
+
+		<p>&copy; 2025<script>new Date().getFullYear() > 2025 && document.write("-" + new Date().getFullYear());</script>,</p> <p data-i18n="footer_text"></p>
+	</footer>
 </html>
