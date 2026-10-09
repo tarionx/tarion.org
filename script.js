@@ -34,17 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 })
 
-// Language support
-async function getLanguageData(lang){
-    if (!lang || lang === ""){
-        lang = "en";
-    }
-
-    const response = await fetch(`languages/${lang}.json`);
-    return response.json();
-}
-
-
 async function getProjectsData(){
     const response = await fetch(`projects.json`);
     return response.json();
