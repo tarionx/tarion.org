@@ -34,10 +34,13 @@ body {
     padding-top: 64px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     color: var(--text-color-important);
 
     padding-top: 64px;
+    font-size: 1.5em;
+}
+h1 {
     font-size: 2em;
 }
 
