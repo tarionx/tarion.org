@@ -231,12 +231,12 @@ main {
 }
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(18rem, 100%), 1fr));
     grid-gap: 2rem;
+    width: 100%;
 }
 .project {
     padding: 2rem;
-    margin: 0 auto;
     text-align: center;
     background-color: var(--background-color-projects);
     border-radius: 16px;
@@ -405,16 +405,22 @@ footer a {
     .mobile-nav {
         display: block;
         position: fixed;
-        right: -18rem;
+        right: 0;
         width: 18rem;
         height: 100vh;
         padding-top: 8rem;
         background-color: var(--background-color-alt);
         box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
         z-index: 50;
+
+        transform: translateX(100%);
+        visibility: hidden;
+        
     }
     .mobile-nav.active {
         right: 0;
+        transform: translateX(0);
+        visibility: visible;
     }
     
     .mobile-nav ul {
@@ -477,6 +483,7 @@ footer a {
     .projects-container h1 {
         font-size: 1.75rem;
     }
+    
     .projects {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
