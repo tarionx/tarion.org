@@ -42,7 +42,18 @@
         ],
         "links": [
             {
-                "link": "https://blog.tarion.org/media-server",
+                "link": "https://tarion.org/blog/media-server",
+                "icon": "fas fa-newspaper"
+            }
+        ]
+    },
+    "project_beolab_displays_title": {
+        "description": "project_beolab_displays_description",
+        "skills":[
+        ],
+        "links": [
+            {
+                "link": "https://tarion.org/blog/beolab-displays",
                 "icon": "fas fa-newspaper"
             }
         ]

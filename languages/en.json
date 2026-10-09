@@ -19,7 +19,6 @@
 
     "footer_text": "Tarion. All rights reserved.",
 
-
     "project_game_engine_title": "Game Engine",
     "project_game_engine_description": "A custom C++ game engine using OpenGL.",
     
@@ -28,6 +27,9 @@
 
     "project_media-server_title": "Media Server",
     "project_media-server_description": "A custom media server that allows me to upload files and share them using a unique link.",
+
+    "project_beolab_displays_title": "Beolab Display Logic",
+    "project_beolab_displays_description": "placeholder",
 
     "project_lov8_title": "LOV-8",
     "project_lov8_description": "A fantasy console built with LÖVE2D, featuring a sandboxed environment for developing games within strict limitations.",

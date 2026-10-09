@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+{{ $orgPath := .OriginalReq.URL.Path | trimPrefix "/blog/" | trimSuffix "/" }}
+{{ $path := printf "/blog/posts/%s.md" $orgPath }}
+
+{{ if not (fileExists $path) }}
+    {{ errorf "Blog post not found: %s" $orgPath }}
+{{ end }}
+
+{{ $markdownFile := (include $path | splitFrontMatter) }}
+
+{{ $lang := default "" $markdownFile.Meta.lang }}
+{{ $textDir := default "auto" $markdownFile.Meta.text_dir }}
+{{ $title := default .OriginalReq.URL.Path $markdownFile.Meta.title }}
+
+<html dir="{{ $textDir }}" lang="{{ $lang }}">
+<head>
+    <title>{{ $title }}</title>
+</head>
+
+<body>
+    <main>
+        <article>{{ markdown $markdownFile.Body }}</article>
+    </main>
+</body>
+
+</html>

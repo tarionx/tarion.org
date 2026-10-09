@@ -28,6 +28,9 @@
     "project_media-server_title": "Media Server",
     "project_media-server_description": "A custom media server that allows me to upload files and share them using a unique link.",
 
+    "project_beolab_displays_title": "Beolab Display Logic",
+    "project_beolab_displays_description": "placeholder",
+
     "project_lov8_title": "LOV-8",
     "project_lov8_description": "Eine Fantasy-Konsole, entwickelt mit LÖVE2D, mit einer abgeschotteten Umgebung zum Entwickeln von Spielen unter strengen Einschränkungen.",
 
