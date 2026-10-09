@@ -122,10 +122,17 @@ document.addEventListener("DOMContentLoaded", async () => {
             }
             newProject.appendChild(projectSkills);
 
-            var button = document.createElement("a");
-            button.setAttribute("href", project.link);
-            button.innerHTML = "<i class='" + project.linkIcon + "'></i>"
-            newProject.appendChild(button);
+            var projectLinks = document.createElement("ul");
+            for (var projectKey in project.links){
+                var newLink = document.createElement("li");
+                projectLinks.appendChild(newLink);
+
+                var button = document.createElement("a");
+                button.setAttribute("href", project.links[projectKey].link);
+                button.innerHTML = "<i class='" + project.links[projectKey].icon + "'></i>"
+                newLink.appendChild(button);
+            }
+            newProject.appendChild(projectLinks);
 
             document.getElementsByClassName("projects")[0].appendChild(newProject);
         }

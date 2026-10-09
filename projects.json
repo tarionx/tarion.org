@@ -1,14 +1,4 @@
 {
-    "project_game_engine_title": {
-        "description": "project_game_engine_description",
-        "skills":[
-            "C++",
-            "OpenGL",
-            "Lua"
-        ],
-        "link": "https://git.tarion.org/tarion/Game-Engine",
-        "linkIcon": "fa-brands fa-git-alt"
-    },
     "project_tarion_org_title": {
         "description": "project_tarion_org_description",
         "skills":[
@@ -17,8 +7,30 @@
             "JavaScript",
             "Hosting"
         ],
-        "link": "https://tarion.org/",
-        "linkIcon": "fa-solid fa-globe"
+        "links": [
+            {
+                "link": "https://github.com/tarionx/tarion.org",
+                "icon": "fa-brands fa-github"
+            },
+            {
+                "link": "https://tarion.org",
+                "icon": "fa-solid fa-globe"
+            }
+        ]
+    },
+    "project_game_engine_title": {
+        "description": "project_game_engine_description",
+        "skills":[
+            "C++",
+            "OpenGL",
+            "Lua"
+        ],
+        "links": [
+            {
+                "link": "https://github.com/tarionx/Game-Engine",
+                "icon": "fa-brands fa-github"
+            }
+        ]
     },
     "project_media-server_title": {
         "description": "project_media-server_description",
@@ -26,25 +38,38 @@
             "JavaScript",
             "HTML",
             "CSS",
+            "FFmpeg",
             "Hosting"
         ],
-        "link": "https://git.tarion.org/tarion/media-server",
-        "linkIcon": "fa-brands fa-git-alt"
-    },
-    "project_remove_shorts_title": {
-        "description": "project_remove_shorts_description",
-        "skills":[
-            "JavaScript"
-        ],
-        "link": "https://git.tarion.org/tarion/remove-youtube-shorts",
-        "linkIcon": "fa-brands fa-git-alt"
+        "links": [
+            {
+                "link": "https://blog.tarion.org/media-server",
+                "icon": "fas fa-newspaper"
+            }
+        ]
     },
     "project_lov8_title": {
         "description": "project_lov8_description",
         "skills":[
             "Lua"
         ],
-        "link": "https://git.tarion.org/tarion/LOV-8",
-        "linkIcon": "fa-brands fa-git-alt"
+        "links": [
+            {
+                "link": "https://github.com/tarionx/LOV-8",
+                "icon": "fa-brands fa-github"
+            }
+        ]
+    },
+    "project_remove_shorts_title": {
+        "description": "project_remove_shorts_description",
+        "skills":[
+            "JavaScript"
+        ],
+        "links": [
+            {
+                "link": "https://github.com/tarionx/remove-youtube-shorts",
+                "icon": "fa-brands fa-github"
+            }
+        ]
     }
 }
