@@ -29,6 +29,7 @@
 
     --text-color: rgb(217, 182, 143);
     --text-color-alt: rgb(210, 166, 117);
+    --text-color-alt2: rgb(257, 222, 183);
     --text-color-important: rgb(208, 71, 59);
 }
 
@@ -89,7 +90,7 @@ nav ul li a {
     padding: 0px 12px;
 }
 nav ul li a:hover {
-    color: #6d6d6d;
+    color: var(--text-color-alt2);
 }
 
 /*
