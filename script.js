@@ -1,44 +1,5 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-    const darkModeButton = document.getElementById("dark-mode-toggle");
-    const mobileDarkModeButton = document.getElementById("dark-mode-toggle-mobile");
-    const body = document.body;
-
-    function toggleDarkMode(save){
-        const isLightMode = body.classList.toggle("light-mode");
-        darkModeButton.innerHTML = isLightMode ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
-    
-        if (save){
-            localStorage.setItem("theme", isLightMode ? "light" : "dark");
-        }
-    }
-
-    // Load Dark Mode preference from cache
-    const theme = localStorage.getItem("theme");
-    if (theme === "light"){
-        body.classList.add("light-mode");
-        darkModeButton.innerHTML = '<i class="fa-solid fa-sun"></i>';
-    }
-
-    darkModeButton.addEventListener("click", () => {
-        toggleDarkMode(true);
-    })
-
-    mobileDarkModeButton.addEventListener("click", () => {
-        toggleDarkMode(true);
-    })
-
-    // Add/remove scrolled style to header
-    window.addEventListener("scroll", () => {
-        const header = document.querySelector("header");
-
-        if (window.scrollY === 0){
-            header.classList.remove("scrolled");
-        } else {
-            header.classList.add("scrolled");
-        }
-    })
-
     // Mobile Nav
     const mobileNavButton = document.getElementById("mobile-nav-toggle");
     const mobileNav = document.getElementById("mobile-nav");
