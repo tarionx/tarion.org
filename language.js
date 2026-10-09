@@ -14,7 +14,7 @@ language = {
         const userLang = (navigator.language || navigator.userLanguage).split("-")[0];
 
         returnsPath = "";
-        for (var i = 0; i < returns.length; i++){
+        for (var i = 0; i < returns.length+1; i++){
             returnsPath += "../";
         }
 
