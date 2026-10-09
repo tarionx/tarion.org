@@ -21,7 +21,7 @@
 
 
     "project_game_engine_title": "Game Engine",
-    "project_game_engine_description": "A custom C++ game engine with Lua scripting integration.",
+    "project_game_engine_description": "A custom C++ game engine using OpenGL.",
     
     "project_tarion_org_title": "tarion.org",
     "project_tarion_org_description": "Personal portfolio showcasing my projects and development work.",

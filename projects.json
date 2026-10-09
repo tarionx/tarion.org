@@ -22,12 +22,11 @@
         "description": "project_game_engine_description",
         "skills":[
             "C++",
-            "OpenGL",
-            "Lua"
+            "OpenGL"
         ],
         "links": [
             {
-                "link": "https://github.com/tarionx/Game-Engine",
+                "link": "https://github.com/tarionx/Engine2026",
                 "icon": "fa-brands fa-github"
             }
         ]

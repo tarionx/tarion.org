@@ -20,7 +20,7 @@
     "footer_text": "Tarion. Alle Rechte vorbehalten.",
 
     "project_game_engine_title": "Game Engine",
-    "project_game_engine_description": "Eine benutzerdefinierte C++-Spiel-Engine mit Lua-Skripting-Integration.",
+    "project_game_engine_description": "Eine C++ Game Engine mit OpenGL.",
 
     "project_tarion_org_title": "tarion.org",
     "project_tarion_org_description": "Persönliches Portfolio zur Präsentation meiner Projekte und Entwicklungsarbeit.",
